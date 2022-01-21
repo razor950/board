@@ -41,6 +41,7 @@ RUN apk add -u --no-cache \
     imagemagick \
     jq \
     nginx \
+    msmtp \
     php7 \
     php7-curl \
     php7-fpm \

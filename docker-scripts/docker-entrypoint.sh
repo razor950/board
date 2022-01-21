@@ -51,7 +51,10 @@ EOF
   mkdir -p /run/nginx
 
   mkdir -p /var/lib/nginx/html/tmp/cache
-  chown -R nginx:nginx /var/lib/nginx/html/tmp/cache
+  chown -R nginx:nginx /var/lib/nginx/html/tmp
+  chmod -R 777 /var/lib/nginx/html/tmp
+  chmod -R ugo+w /var/lib/nginx/html/client/img
+  chmod -R ugo+w /var/lib/nginx/html/server/php/shell
 
   mkdir -p /var/lib/nginx/html/media
   chown -R nginx:nginx /var/lib/nginx/html/media
